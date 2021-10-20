@@ -1,0 +1,14 @@
+Version: 4
+IHL: 20 bytes (5)
+Type of Service: 0x00 (DSCP: CS0, ECN: Not-ECT)
+Total Length: 260
+Identification: 0x0000 (0)
+Flags: 0x40
+Fragment Offset: 0
+Time To Live: 63
+Protocol: TCP (6)
+Header Checksum: 0x85a6 
+Source IP Address: 149.153.31.110
+Destination IP Address: 149.153.106.173
+Options: N/A
+Padding: N/A

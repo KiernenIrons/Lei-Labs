@@ -1,0 +1,91 @@
+Address Class: B
+Default Subnet Mask: 255.255.0.0
+Custom Subnet Mask: 255.255.255.224
+Total Number of Subnets: 2048
+Total Number of Host Addresses: 64
+Number of Usable Addresses: 62
+Number of Bits Borrowed: 11
+
+----------------------------------------------------------------
+
+Address Class: B
+Default Subnet Mask: 255.255.0.0
+Custom Subnet Mask: 255.255.255.192
+Total Number of Subnets: 1024
+Total Number of Host Addresses: 64
+Number of Usable Addresses: 62
+Number of Bits Borrowed: 10
+
+----------------------------------------------------------------
+
+Address Class: B
+Default Subnet Mask: 255.255.0.0
+Custom Subnet Mask: 255.255.240.0
+Total Number of Subnets:16
+Total Number of Host Addresses: 8192
+Number of Useable Addresses: 8190
+Number of Bits Borrowed: 3
+
+What is the 6th Subnet Range? 
+135.70.160.0-135.70.191.255
+What is the Subnet Number for the 7th Subnet?
+135.70.192.0
+What is the Subnet Broadcast Address for the 3rd Subnet?
+135.70.95.255
+What are the Assignable Addresses for the 5th Subnet?
+135.70.128.1-135.70.159.254
+
+----------------------------------------------------------------
+
+Address Class: C
+Default Subnet Mask: 255.255.255.0
+Custom Subnet Mask: 255.255.255.192
+Total Number of Subnets: 4
+Total Number of Host Addresses: 64
+Number of Usable Addresses: 62
+Number of Bits Borrowed: 2
+
+What is the 2nd Subnet Range?
+198.125.50.64-198.125.50.127
+What is the subnet Number for the 2nd Subnet?
+198.125.50.64
+What is the Subnet Broadcast Address for the 4th Subnet?
+198.125.50.255
+What are the Assignable Addresses for the 3rd Subnet?
+198.125.50.129-198.125.50.190
+
+----------------------------------------------------------------
+
+Address Class: B
+Custom Subnet Mask: 255.255.240.0
+Minimum Number of Subnets needed: 5
+Extra Subnets Required for 70% Growth: 4
+Total Number of Subnets Needed: 9
+Number of Host Addresses in the Largest Subnet Group: 375
+Number of Addresses Needed Neeedd for the Largest Subnet: 553
+
+IP Addresses for New York: 135.126.0.0-135.126.15.255
+IP Address Range for Washington D.C: 135.126.16.0-135.126.31.255
+IP Address Range for Dallas: 135.126.32.0-135.126.47.255
+IP Address Range for Router A to Router B Serial Connection: 135.126.48.0-135.126.63.255
+IP Address Range for Router A to Router C Serial Connection: 135.126.64.0-135.126.79.255
+
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
