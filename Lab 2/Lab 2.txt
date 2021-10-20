@@ -1,3 +1,6 @@
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
 Version: 4
 IHL: 20 bytes (5)
 Type of Service: 0x00 (DSCP: CS0, ECN: Not-ECT)
@@ -12,3 +15,98 @@ Source IP Address: 149.153.31.110
 Destination IP Address: 149.153.106.173
 Options: N/A
 Padding: N/A
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+Version: Specifies the version of the IP used, the current version of the IP protocol is 4.
+-------------------------------------------------------------------------------------------
+Length: Specifies the datagram header length, measured in 32-bit words.
+-------------------------------------------------------------------------------------------
+Type of Service: Contains five subfields that specify the type of precedence, delay, 
+                 throughput, and reliability desired for that packet.
+-------------------------------------------------------------------------------------------
+Total Length: Specifies the length of the datagram including both the header and the data               measured in octets.
+-------------------------------------------------------------------------------------------
+Identification: an integer that identifies the datagram.
+-------------------------------------------------------------------------------------------
+Flags: Controls datagram fragmentation, along with the Identification field.
+-------------------------------------------------------------------------------------------
+Fragment Offset: Specifies the offset of this fragment in the original datagram measured in                  units of 8 octets.
+-------------------------------------------------------------------------------------------
+Time to Live: Specifies how long the datagram can remain on the internet (default 255               seconds)
+-------------------------------------------------------------------------------------------
+Protocol: Specifies the high-level protocol type.
+-------------------------------------------------------------------------------------------
+Header Checksum: Indicates a number computed to ensure the integrity of header values.
+-------------------------------------------------------------------------------------------
+Source Address: Specifies the Internet address of the sending host.
+-------------------------------------------------------------------------------------------
+Destination Address: Specifies the Internet address of the receiving host.
+-------------------------------------------------------------------------------------------
+Options: Provides network testing and debugging. This field is not required for every          datagram.
+-------------------------------------------------------------------------------------------
+End of Option List
+
+Indicates the end of the option list. It is used at the end of the final option, not at the end of each option individually. This option should be used only if the end of the options would not otherwise coincide with the end of the IP header. End of Option List is used if options exceed the length of the datagram.
+-------------------------------------------------------------------------------------------
+No Operation
+
+Provides alignment between other options; for example, to align the beginning of a subsequent option on a 32-bit boundary.
+-------------------------------------------------------------------------------------------
+Loose Source and Record Route
+
+Provides a means for the source of an Internet datagram to supply routing information used by the gateways in forwarding the datagram to a destination and in recording the route information. This is a loose source route: the gateway or host IP is allowed to use any route of any number of other intermediate gateways in order to reach the next address in the route.
+-------------------------------------------------------------------------------------------
+Strict Source and Record Route
+
+Provides a means for the source of an Internet datagram to supply routing information used by the gateways in forwarding the datagram to a destination and in recording the route information. This is a strict source route: In order to reach the next gateway or host specified in the route, the gateway or host IP must send the datagram directly to the next address in the source route and only to the directly connected network that is indicated in the next address.
+-------------------------------------------------------------------------------------------
+Record Route
+
+Provides a means to record the route of an Internet datagram.
+-------------------------------------------------------------------------------------------
+Stream Identifier
+
+Provides a way for a stream identifier to be carried through networks that do not support the stream concept.
+-------------------------------------------------------------------------------------------
+Internet Timestamp
+
+Provides a record of the time stamps through the route.
+-------------------------------------------------------------------------------------------
+Padding: Used to make sure the IP packet header has a length that is a multipleof 32 bits.
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Difference: The protocol, My one was TCP (6) and the given example had an ICMP (1) protocol
+
+ICMP is a "control" protocol that transfers information about other protocols whereas TCP is for transferring application data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
