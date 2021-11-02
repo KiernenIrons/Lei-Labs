@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+Interface: s0
+
+IP: 10.1.5.64/29
+
+The first 31 bits of s0's IP matches the destination also the prefix is higher than the competitors.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+Interface: 1
+
+IP: 131.22.0.0/15
+
+This IP matches the destination IP the closest of all the options.
+
+Question 3
+192.24.6.0 will hop to 192.24.0.0/18 (D)
+192.24.14.32 will hop to 192.24.12.0/22 (B)
+192.24.54.0 will hop to 192.24.12.0/22 (B)
