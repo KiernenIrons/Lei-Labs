@@ -1,0 +1,168 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Question 1
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Draw a TCP header. Capture packets using wireshark and explain the fields for a
+particular TCP packet captured. Try to explain the purpose of each field.
+---------------------------------------------------------------------------------------------------------------------
+Source Port: 8080
+Destination Port: 63116
+Sequence Number (raw): 711527939
+Acknowledgement Number (raw): 3440907570
+Data Offset: N/A
+Reserved: Not Set
+Control Flags: 000010000
+Window Size: 513
+Checksum: 0xc7b1
+Urgent Pointer: 0
+Optional Data: 
+---------------------------------------------------------------------------------------------------------------------
+Source Port: This is the number used byt the computer sendeing the TCP segment.
+
+Destination Port: This is the number used by the computer receiving the TCP packet.
+
+Sequence Number: This helps the TCP software on both sides keep track of how much data has been transferred and to 		 	 put the data back into the correct order if it has been received in the wrong order, and to request 		 	 data when it has been lost in transit.
+
+Acknowledgement Number: This is the sequence number of the next byte the receiver expects to reveive.
+
+Data Offset: The TCP Data Offset indicates number of bytes into the TCP packet where data can be found Thus, it              	     actually indicates the number of bytes in the TCP header and allows the receiver to jump directly to the 	     data.
+
+Reserved: Bits reserved for future use.
+
+Control Flags: Used to indicate a particular state of connection or to provide some additional useful information.
+
+Window Size: Number of octets in the TCP header.
+
+Checksum: A Cyclic Redundancy Check (CRC) checksum is calculated by the sender and added to this field before 	  transmission. This field is used by the receiver to verify the integrity of the data in the TCP payload and 	  rejects data that fails the CRC check.
+
+Urgent Pointer: Points to the end of "urgent" data in the packet, but this field only exists if the URG flag is set.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Question 2
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Draw a UDP header. Capture packets using wireshark and explain the fields for a
+particular UDP packet captured. Try to explain the purpose of each field.
+---------------------------------------------------------------------------------------------------------------------
+Source Port: 57621
+Destination Port: 57621
+Length:52
+Checksum: 0xc53b [unverified]
+Data: 53706f745564703037be14e6461c199c000100044895c2030f7df9e19d12a30c8bc622640661f116003a48b6
+---------------------------------------------------------------------------------------------------------------------
+Source Port: The number of the sender.
+Destination Port: The port the datagram is addressed to go to.
+Length: The length of bytes in the UDP header and any encapsulated data.
+Checksum: Used in error checking, its use is required in IPv6 and optional in IPv4.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Question 3
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Capture a UDP packet, verify the checksum using 16-bit One's Complement Sum
+algorithm
+---------------------------------------------------------------------------------------------------------------------
+Source Address: 192.168.0.101
+Destination Address: 192.168.0.10
+Protocol: UDP (17)
+Source Port: 49905
+Destination Port: 5095
+Length: 16
+Payload length (in Hex) = 
+{
+  01 00
+  02 00
+  00 0C
+  00 08
+}
+
+Converting values to binary and adding them:
+
+11000000.10101000
+00000000.01100101  +	(Source Address)
+-------------------
+11000001.00001101	
+
+11000000.10101000	
+00000000.00001010  +    (Destination Address)
+-------------------
+11000000.10110010
+
+11000001.00001101	(Source Address)
+11000000.10110010  +	(Destination Address)
+-------------------
+10000001.10111111
+00000000.00000001  +	(**must add 1 bit overflow**)
+-------------------
+10000001.11000000
+00000000.00010001  +	(Protocol)
+-------------------
+10000001.11010001
+00000000.00010000  +	(Length)
+-------------------
+10000001.11100001
+11000010.11110001  +	(Source Port)
+-------------------
+01000100.11010010
+00000000.00000001  +	(**must add 1 bit overflow**)
+-------------------
+01000100.11010011
+00010011.11100111  +	(Destination Port)
+-------------------
+01011000.10111010
+00000000.00010000  +	(Length)
+-------------------
+01011000.11001010	(088.202 - Decimal)
+			(58.CA - Hexadecimal)
+
+Time to add the payload:
+
+58 CA
+01 00  +
+-------
+59 CA
+
+58 CA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
