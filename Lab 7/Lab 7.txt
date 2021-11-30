@@ -1,0 +1,31 @@
+Lab 7 
+
+Q1}	True
+
+Q2}	False
+
+Q3}	True
+
+Q4}	False - MSS is set to 1
+
+Q5}	a - Triple Duplicate Acks
+
+Q6}	b - No the packet being discarded could be done by either asymmetric paths
+
+Q7}	d - Time Out
+
+Q8}	b - Nope
+
+Q9}	b - Less
+
+Q10}	The curve indiactes a slow start that will discover the max throughput that the path needs.
+	With additive increase it would take to much time to reach a max RTT.
+
+Q11 - 12}	c - 400ms
+
+Q13)	c - 1200ms
+
+Q14)	b - 600ms
+
+Q15)	Changing cross-traffic by other concurrent senders across same routers.
+	The reason why Point D is higher than Point B is due to additive increase.

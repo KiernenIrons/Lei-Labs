@@ -1,0 +1,28 @@
+Lab 6
+
+Q1}	C -> 435
+
+Q2}	YES
+
+Q3}	3. -> Whether it increases SmoothedRTT depends on the deviation.
+
+Q4}	SmoothedRTT = ( ( 1 - 0.125 ) * 100 + 0.125 * 108 ) = 101
+	DevRTT = ( 1 - 0.25 ) * 8 + 0.25 * ( 108 - 101 ) = 7.75
+	Timeout = ( 101 + ( 4 * 7.75 ) ) = 132
+
+Q5}	C - Flow Control
+
+Q6}	B - 1.5RTT
+
+Q7}	A - Per-byte sequence and ack numbers
+
+Q8}	TRUE
+
+Q9}	FTP - FILE TRANSFER PROTOCOL.
+
+Q10}	100000/125000 = 0.8secs
+	C - 0.8 secs.
+
+Q11}	C - 4 Seconds.
+
+Q12}	B - 40 packets
