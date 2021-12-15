@@ -1,0 +1,9 @@
+Q1
+
+The server will have a listener specifically for a client, once a client has connected then that listener stops listening and the server then waits for the client to send information.
+
+The Client only has 1 socket which it uses to connect to the server and send and receive info.
+
+Q2
+
+Packets could be lost because the data is going to be sent even if there is no connection.
