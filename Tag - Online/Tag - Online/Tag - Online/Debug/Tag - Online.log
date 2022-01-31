@@ -1,7 +1,0 @@
-﻿  Game.cpp
-  Main.cpp
-  Server.cpp
-C:\SFML-2.5.1\include\SFML\Graphics\Rect.inl(81,19): error C2589: '(': illegal token on right side of '::'
-C:\SFML-2.5.1\include\SFML\Graphics\Rect.inl(114,21): error C2589: '(': illegal token on right side of '::'
-C:\Users\kcrir\Desktop\Classes\Onling Gaming Tech\Lei-Labs\Tag - Online\Tag - Online\Tag - Online\Server.h(36,21): error C2065: 'G_CON_COUNT': undeclared identifier
-  Generating Code...
